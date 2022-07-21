@@ -1,0 +1,16 @@
+SOURCE: SYNTHIA
+TARGET: Cityscapes
+NUM_CLASSES: 19
+NUM_WORKERS: 4
+DA_METHOD: FDA
+STAGE: 1
+DATA_SRC_DIRECTORY: /home/vandal/datasets/SYNTHIA/RAND_CITYSCAPES
+DATA_LIST_SOURCE: /ltir/dataset/synthia_list/train.txt
+STYLIZED_DATA_DIR: /data/datasets/style_SYNTHIA
+TRANSLATED_DATA_DIR: /data/datasets/tesi_claudia/syn_deeplab/RGB
+TRAIN:
+  MODEL: DeepLab
+  RESTORE_FROM: ../../pretrained_models/DeepLab_init.pth
+  BATCH_SIZE: 1
+
+
